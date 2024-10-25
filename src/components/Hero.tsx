@@ -4,15 +4,15 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-muted relative">
+    <section className="min-h-screen flex items-center justify-center relative">
       {/* Imagem de capa com overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 w-full h-full">
         <img
           src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
           alt="Capa"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-muted"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/70 to-white/90"></div>
       </div>
 
       <div className="container px-4 py-16 animate-fade-up relative z-10">
