@@ -19,16 +19,16 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {skills.map((skill) => (
             <Card key={skill.name} className="p-6">
-              <h3 className="font-semibold mb-4">{skill.name}</h3>
-              <div className="w-full bg-muted rounded-full h-2.5">
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="font-semibold">{skill.name}</h3>
+                <span className="text-sm text-muted-foreground">{skill.level}</span>
+              </div>
+              <div className="w-full bg-muted rounded-full h-2.5 overflow-hidden">
                 <div
-                  className="bg-primary h-2.5 rounded-full transition-all duration-500"
+                  className="bg-primary h-2.5 rounded-full transition-all duration-500 ease-out"
                   style={{ width: skill.level }}
                 ></div>
               </div>
-              <span className="text-sm text-muted-foreground mt-2 block">
-                {skill.level}
-              </span>
             </Card>
           ))}
         </div>
