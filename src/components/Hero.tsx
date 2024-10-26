@@ -1,8 +1,11 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail,Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import image from "../../public/Imagem2.jpg";
 
-const Hero = () => {
+
+const Hero = ({ scrollToProjects, scrollToContato }) => {
+  
   return (
     <section className="min-h-screen flex items-center justify-center relative">
       {/* Imagem de capa com overlay */}
@@ -19,9 +22,9 @@ const Hero = () => {
         <div className="text-center space-y-8">
           {/* Avatar/Imagem de perfil */}
           <div className="flex justify-center mb-8">
-            <Avatar className="w-32 h-32 border-4 border-primary">
+            <Avatar className="w-52 h-48 border-4 border-primary">
               <AvatarImage
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+                src={image}
                 alt="Foto de perfil"
               />
               <AvatarFallback>JS</AvatarFallback>
@@ -29,28 +32,25 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-secondary">
-            Olá, eu sou <span className="text-primary">João Silva</span>
+            Olá, eu sou <span className="text-primary">Everton Silva</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
             Desenvolvedor Full Stack apaixonado por criar experiências web incríveis e soluções inovadoras
           </p>
           <div className="flex gap-4 justify-center">
-            <Button variant="default" size="lg">
-              Ver Projetos
-            </Button>
-            <Button variant="outline" size="lg">
-              Contato
-            </Button>
+          <Button onClick={scrollToProjects} className="btn-scroll">Ver projetos</Button>
+          <Button onClick={scrollToContato} className="btn-scroll">Contato</Button>
+            
           </div>
           <div className="flex gap-4 justify-center pt-8">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/everton365" target="_blank" rel="noopener noreferrer">
               <Github className="w-6 h-6 hover:text-primary transition-colors" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/everton-silva-68aa14281" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-6 h-6 hover:text-primary transition-colors" />
             </a>
-            <a href="mailto:contato@exemplo.com">
-              <Mail className="w-6 h-6 hover:text-primary transition-colors" />
+            <a href="https://www.instagram.com/ewernoute/" target="blank">
+              <Instagram className="w-6 h-6 hover:text-primary transition-colors" />
             </a>
           </div>
         </div>

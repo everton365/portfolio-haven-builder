@@ -1,40 +1,78 @@
-import { Card } from "@/components/ui/card";
+import React from "react";
 
-const Skills = () => {
-  const skills = [
-    { name: "React", level: "90%" },
-    { name: "TypeScript", level: "85%" },
-    { name: "Node.js", level: "80%" },
-    { name: "Python", level: "75%" },
-    { name: "SQL", level: "85%" },
-    { name: "AWS", level: "70%" },
-  ];
 
+const skills = [
+  { name: "JavaScript", level: 85 },
+  { name: "HTML", level: 90 },
+  { name: "Tailwind", level: 30 },
+  { name: "CSS", level: 80 },
+  { name: "SASS", level: 70 },
+  { name: "React", level: 75 },
+  { name: "Node.js", level: 60 },
+  { name: "SQL", level: 65 },
+  { name: "Git", level: 80 },
+  { name: "GitHub", level: 85 },
+];
+
+const SkillBar = ({ skill, level }) => {
   return (
-    <section id="habilidades" className="py-20 bg-muted">
-      <div className="container px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Habilidades
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {skills.map((skill) => (
-            <Card key={skill.name} className="p-6">
-              <div className="flex justify-between items-center mb-4">
-                <h3 className="font-semibold">{skill.name}</h3>
-                <span className="text-sm text-muted-foreground">{skill.level}</span>
-              </div>
-              <div className="w-full bg-muted rounded-full h-2.5 overflow-hidden">
-                <div
-                  className="bg-primary h-2.5 rounded-full transition-all duration-500 ease-out"
-                  style={{ width: skill.level }}
-                ></div>
-              </div>
-            </Card>
-          ))}
-        </div>
+    <div className="mb-6">
+      <div className="flex justify-between mb-2">
+        <span className="text-lg font-semibold text-gray-700">{skill}</span>
+        <span className="text-sm text-gray-500">{level}%</span>
       </div>
-    </section>
+      <div className="w-full bg-gray-300 rounded-full h-4">
+        <div
+          className="bg-primary h-4 rounded-full"
+          style={{ width: `${level}%` }}
+        ></div>
+      </div>
+    </div>
   );
 };
+
+const Skills = () => {
+  // Dividindo o array de skills em dois grupos de 4
+  const firstHalf = skills.slice(0, 5);
+  const secondHalf = skills.slice(5, 10);
+
+  return (
+    <>
+      <div className="h-screen/2 w-full mt-7 flex items-center justify-center bg-white">
+        <div className="w-full max-w-4xl p-8 bg-white rounded-lg shadow-lg">
+          <h1 className="text-2xl font-bold text-center mb-8 text-gray-800">
+            Habilidades
+          </h1>
+          <div className="flex justify-between space-x-6">
+            {/* Card com as duas listas de skills */}
+            <div className="w-full max-w-sm p-6 bg-white rounded-lg shadow-lg">
+              <div className="flex flex-col space-y">
+                {firstHalf.map((skill) => (
+                  <SkillBar
+                    key={skill.name}
+                    skill={skill.name}
+                    level={skill.level}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="w-full max-w-sm p-6 bg-white rounded-lg shadow-lg">
+              <div className="flex flex-col space-y">
+                {secondHalf.map((skill) => (
+                  <SkillBar
+                    key={skill.name}
+                    skill={skill.name}
+                    level={skill.level}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
 
 export default Skills;
