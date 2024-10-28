@@ -13,14 +13,14 @@ const Projects = () => {
     },
     {
       title: "Projeto Python",
-      description: "Aplicativo com React",
+      description: "Aplicativo com Django",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-      github: "https://github.com/everton365/projeto-chamine-python",
+      github: "https://github.com/everton365/projeto-chamine",
       live: "",
     },
     {
       title: "Portfolio Website",
-      description: "Site de portfólio responsivo com React.js",
+      description: "Site de portfólio com React.js",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
       github: "https://github.com/everton365/LandingPage",
       live: "https://everton365.github.io/LandingPage/",
