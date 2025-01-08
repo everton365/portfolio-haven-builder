@@ -20,7 +20,7 @@ const About = () => {
               <p className="text-muted-foreground">Anos de Experiência</p>
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-xl mb-2">10+</h3>
+              <h3 className="font-bold text-xl mb-2">5+</h3>
               <p className="text-muted-foreground">Projetos Concluídos</p>
             </div>
             <div className="text-center">
