@@ -57,7 +57,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-4">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>Aquiraz, CE - Brasil</span>
+                <span>Fortaleza, CE - Brasil</span>
               </div>
             </div>
           </Card>
