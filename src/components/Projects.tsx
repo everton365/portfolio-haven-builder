@@ -12,8 +12,8 @@ const Projects = () => {
       live: "https://everton365.github.io/DigitalStore/",
     },
     {
-      title: "Projeto análise de imagens com javascript",
-      description: "Aplicativo com Django",
+      title: "Análise de imagens",
+      description: "Aplicativo com javascript",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       github: "https://github.com/everton365/projeto-chamine",
       live: "",
