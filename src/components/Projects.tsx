@@ -12,7 +12,7 @@ const Projects = () => {
       live: "https://everton365.github.io/DigitalStore/",
     },
     {
-      title: "Projeto Python",
+      title: "Projeto análise de imagens com javascript",
       description: "Aplicativo com Django",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
       github: "https://github.com/everton365/projeto-chamine",
@@ -23,7 +23,7 @@ const Projects = () => {
       description: "Site de portfólio com React.js",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
       github: "https://github.com/everton365/LandingPage",
-      live: "https://github.com/everton365/LandingPage",
+      live: "https://everton365.github.io/LandingPage/",
     },
     {
       title: "Jogo Bíblico",
