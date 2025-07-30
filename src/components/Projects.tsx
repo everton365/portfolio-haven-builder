@@ -23,8 +23,15 @@ const Projects = () => {
       description: "Site de portfólio com React.js",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
       github: "https://github.com/everton365/LandingPage",
-      live: "https://everton365.github.io/LandingPage/",
+      live: "https://github.com/everton365/LandingPage",
     },
+    {
+      title: "Jogo Bíblico",
+      description: "Pagina de perguntas e respostas sobre a Bíblia",
+      image: "https://th.bing.com/th/id/R.facdb130a9f2dbb1cd34cbf4f6b8e30d?rik=v2Z0ype%2fUvSKiw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-TZw6YmBl0A0%2fTntSQti9UPI%2fAAAAAAAAP0Q%2fJkq2FlQHHss%2fs1600%2fGotas-de-Agua-en-HD_18.jpg&ehk=WdFlpoASwA8oHpwhiRyuQim5YvRN6SRDRHwq1jZd%2bwk%3d&risl=&pid=ImgRaw&r=0",
+      github: "https://github.com/everton365/quiz-quest-randomizer-gem.git",
+      live: "https://pingandozelo.com.br"
+    }
   ];
 
   return (

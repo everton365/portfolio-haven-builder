@@ -49,7 +49,7 @@ const Hero = ({ scrollToProjects, scrollToContato }) => {
             <a href="https://www.linkedin.com/in/everton-silva-68aa14281" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-6 h-6 hover:text-primary transition-colors" />
             </a>
-            <a href="https://www.instagram.com/ewernoute/" target="blank">
+            <a href="https://www.instagram.com/ewernoute_informatica/" target="blank">
               <Instagram className="w-6 h-6 hover:text-primary transition-colors" />
             </a>
           </div>
